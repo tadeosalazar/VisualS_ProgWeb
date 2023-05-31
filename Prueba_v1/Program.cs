@@ -21,6 +21,8 @@ namespace Prueba_v1
                 .AddEntityFrameworkStores<Pia_ProgWebContext>()
                 .AddDefaultTokenProviders();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddRazorPages();
+
 
             var app = builder.Build();
 
