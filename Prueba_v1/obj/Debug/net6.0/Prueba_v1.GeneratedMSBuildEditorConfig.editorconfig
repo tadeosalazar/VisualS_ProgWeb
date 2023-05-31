@@ -176,6 +176,66 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Categoriums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Categoriums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Categoriums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Categoriums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Categoriums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/ComidumsDTO/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNEVE9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/ComidumsDTO/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNEVE9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/ComidumsDTO/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNEVE9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/ComidumsDTO/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNEVE9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/ComidumsDTO/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNEVE9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
