@@ -15,9 +15,6 @@ namespace Prueba_v1.Models.dbModels
             Reseñas = new HashSet<Reseña>();
         }
 
-        [Column("apellido")]
-        [StringLength(50)]
-        public string Apellido { get; set; } = null!;
         
 
 
