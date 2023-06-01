@@ -1,10 +1,11 @@
 ﻿@model IEnumerable<Prueba_v1.Models.dbModels.Carrito>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inicio";
+    Layout = User.IsInRole("Admin") ? "_LayoutAdm" : "_LayoutEsp";
 }
 
-<h1>Index</h1>
+<h1>Inicio</h1>
 
 <p>
     <a asp-action="Create">Create New</a>

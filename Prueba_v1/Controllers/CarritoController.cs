@@ -22,7 +22,14 @@ namespace Prueba_v1.Controllers
         }
 
         // GET: Carrito
+       
         public async Task<IActionResult> Index()
+        {
+            var pia_ProgWebContext = _context.Carritos.Include(c => c.IdComidaNavigation).Include(c => c.IdUsusario1).Include(c => c.IdUsusarioNavigation);
+            return View(await pia_ProgWebContext.ToListAsync());
+        }
+     
+        public async Task<IActionResult> Inicio()
         {
             var pia_ProgWebContext = _context.Carritos.Include(c => c.IdComidaNavigation).Include(c => c.IdUsusario1).Include(c => c.IdUsusarioNavigation);
             return View(await pia_ProgWebContext.ToListAsync());
