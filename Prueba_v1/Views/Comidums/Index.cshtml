@@ -3,7 +3,12 @@
 @{
     ViewData["Title"] = "Index";
 }
+@{
+    Layout = "_LayoutAdm";
+}
 
+
+[Authorize(Roles = "Admin")]
 <h1>Index</h1>
 
 <p>

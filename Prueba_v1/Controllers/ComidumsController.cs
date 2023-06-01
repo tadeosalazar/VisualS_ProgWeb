@@ -11,7 +11,7 @@ using Prueba_v1.Models.dbModels;
 
 namespace Prueba_v1.Controllers
 {
-    [Authorize(Roles = "Cliente")]
+    
     public class ComidumsController : Controller
     {
         private readonly Pia_ProgWebContext _context;
@@ -22,6 +22,7 @@ namespace Prueba_v1.Controllers
         }
 
         // GET: Comidums
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
@@ -29,6 +30,7 @@ namespace Prueba_v1.Controllers
         }
 
         //Prueba
+        [Authorize(Roles = "Cliente, Admin")]
         public async Task<IActionResult> Inicio()
         {
             var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);

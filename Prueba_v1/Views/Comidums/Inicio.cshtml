@@ -2,11 +2,10 @@
 
 @{
     ViewData["Title"] = "Inicio";
+    Layout = User.IsInRole("Admin") ? "_LayoutAdm" : "_LayoutEsp";
 }
 
-@{
-    Layout = "_LayoutEsp";
-}
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
