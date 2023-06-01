@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b/Yt5bXoJ/HuDmA4Yg2T2s0AGW5TaOjwUUFRzdPFJrg=",
+  "Hash": "YhrnXvPihOYy6Y4WpdU84iMTXknheX4hMNEQj+86fVM=",
   "Source": "Prueba_v1",
   "BasePath": "_content/Prueba_v1",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Prueba_v1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\css\\entradas.css",
+      "SourceId": "Prueba_v1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\",
+      "BasePath": "_content/Prueba_v1",
+      "RelativePath": "css/entradas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\entradas.css"
     },
     {
       "Identity": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\css\\site.css",

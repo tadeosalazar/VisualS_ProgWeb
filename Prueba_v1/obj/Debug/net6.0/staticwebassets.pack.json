@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Prueba_v1.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\css\\entradas.css",
+      "PackagePath": "staticwebassets\\css\\entradas.css"
+    },
+    {
       "Id": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

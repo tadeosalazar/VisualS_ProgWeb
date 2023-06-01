@@ -176,6 +176,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Carrito/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Carrito/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Carrito/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Carrito/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Carrito/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Categoriums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -234,6 +254,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Comidums/Inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWR1bXNcSW5pY2lvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jesus/Desktop/Prog Web/Prueba_v1/Prueba_v1/Views/Home/Contactanos.cshtml]
