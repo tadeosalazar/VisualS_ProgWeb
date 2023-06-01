@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/194667a566.js" crossorigin="anonymous"></script>
           
 </head>
+<body>
 <h1>Index</h1>
 
 <p>
@@ -35,11 +36,12 @@
                 @Html.DisplayFor(modelItem => item.Descripción)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCategoria">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCategoria">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCategoria">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.IdCategoria"><i class="fa fa-edit"></i></a> |
+                    <a asp-action="Details" asp-route-id="@item.IdCategoria"><i class="fa fa-info-circle"></i> </a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdCategoria"><i class="fa fa-trash"></i></a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</body>

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Prueba_v1.Models.dbModels;
+using Prueba_v1.Models.DTO;
 
 namespace Prueba_v1.Controllers
 {
@@ -28,7 +29,9 @@ namespace Prueba_v1.Controllers
             var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
             return View(await pia_ProgWebContext.ToListAsync());
         }
+        //Prueba
 
+        //Prueba
         //Prueba
         [Authorize(Roles = "Cliente, Admin")]
         public async Task<IActionResult> Inicio()
