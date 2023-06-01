@@ -17,7 +17,10 @@ namespace Prueba_v1.Controllers
         {
             return View();
         }
-
+        public IActionResult Contactanos()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
