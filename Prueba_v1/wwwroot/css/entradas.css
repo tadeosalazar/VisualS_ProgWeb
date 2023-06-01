@@ -45,6 +45,7 @@
     .card img {
         max-width: 100%; /* ajusta el tamaño de la imagen al ancho máximo de la tarjeta */
         height: auto; /* mantener la proporción de aspecto */
+        object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
     }
 
 .card-grid {

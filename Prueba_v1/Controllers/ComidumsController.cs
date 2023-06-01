@@ -34,6 +34,18 @@ namespace Prueba_v1.Controllers
             var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
             return View(await pia_ProgWebContext.ToListAsync());
         }
+
+        public async Task<IActionResult> Entradas()
+        {
+            var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
+            return View(await pia_ProgWebContext.ToListAsync());
+        }
+
+        public async Task<IActionResult> Bebidas()
+        {
+            var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
+            return View(await pia_ProgWebContext.ToListAsync());
+        }
         //Prueba
 
         // GET: Comidums/Details/5
