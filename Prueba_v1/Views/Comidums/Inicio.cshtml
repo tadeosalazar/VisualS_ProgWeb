@@ -20,74 +20,27 @@
 
 <p>Escge de nuestro amplio catalogo de comidas para que no te quedes con hambre</p>
 
-<div class="col-lg-12">
-    <div class="row">
-        <div class="card">
-            <div class="face front">
-                <img src="IMG/burgir.jpg" alt="">
-                <h3>Hamburguesa</h3>
-            </div>
-            <div class="face back">
+@if (Model != null)
+{
+    <table>
+        <thread>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
 
-                <p>
-                    Una deliciosa hamburguesa simple, con carne de res, queso manchego, 2 tiras de tocino,
-                    tomate, cebolla y lechuga acompañado de una orden de papas francesas.
-                </p>
-                <div class="link">
-                    <a href="#">Más Detalles</a>
-                </div>
-            </div>
-        </div>
+        </thread>
 
-        <div class="card">
-            <div class="face front">
-                <img src="IMG/pizza.jpg" alt="">
-                <h3>Pizza De pepperoni</h3>
-            </div>
-            <div class="face back">
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Descripcion</td>
+                    <td>@String.Format("{0:C}",item.Precio)</td>
+                    <td>@Html.ActionLink("Agregar","AgregarCarrito","Carrito",new {Id=item.IdComida})</td>
+                </tr>
+            }
+        </tbody>
 
-                <p>Unaa simple pizza de 8 rebanadas con salsa de toamte, queso manchego, pepperoni y pimento verde.</p>
-                <div class="link">
-                    <a href="#">Más Detalles</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="face front">
-                <img src="IMG/torta_salmon.jpg" alt="">
-                <h3>Torta de Salmón</h3>
-            </div>
-            <div class="face back">
- 
-                <p>
-                    Una torta de filete salmon, con queso manchego, jamon de pavo,
-                    una cama de lechuga, rebanadas de cebolla y bañado en aceite oliva.
-                </p>
-                <div class="link">
-                    <a href="#">Más Detalles</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="face front">
-                <img src="IMG/pescado.jpg" alt="">
-                <h3>Pescado Empanizado</h3>
-            </div>
-            <div class="face back">
-
-                <p>
-                    Este platillo consta de 3 tiras de pescado empanizado, sobre una cama
-                    de lechuga cebolla, zanahoria, tomate.
-                </p>
-                <div class="link">
-                    <a href="#">Más Detalles</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
+    </table>
+}

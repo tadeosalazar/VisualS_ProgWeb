@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "o99v6ZEJ+CD0B+rmh1tde8c/e5XI39gQLPVMCufecIQ=",
+=======
+  "Hash": "zQ8cmQ+gkRM7QwaTXlKxnWwDehEbQ52E8vUG9c4VYc4=",
+>>>>>>> 25e6879628ea9c2f6e9bd29b6402984fa2f50c94
   "Source": "Prueba_v1",
   "BasePath": "_content/Prueba_v1",
   "Mode": "Default",
@@ -1137,6 +1141,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\js\\app.js",
+      "SourceId": "Prueba_v1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\",
+      "BasePath": "_content/Prueba_v1",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
     },
     {
       "Identity": "C:\\Users\\Jesus\\Desktop\\Prog Web\\Prueba_v1\\Prueba_v1\\wwwroot\\js\\site.js",
