@@ -22,6 +22,7 @@ namespace Prueba_v1.Models.dbModels
         [StringLength(50)]
         [Unicode(false)]
         public string Nombre { get; set; } = null!;
+        public string? Imagen { get; set; }
         [Column("descripcion")]
         [StringLength(300)]
         [Unicode(false)]

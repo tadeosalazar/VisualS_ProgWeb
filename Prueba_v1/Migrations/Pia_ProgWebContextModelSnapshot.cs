@@ -293,6 +293,9 @@ namespace Prueba_v1.Migrations
                         .HasColumnType("int")
                         .HasColumnName("id_categoria");
 
+                    b.Property<string>("Imagen")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(50)

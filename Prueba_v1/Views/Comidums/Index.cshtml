@@ -31,7 +31,7 @@
                 @Html.DisplayNameFor(model => model.Precio)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdCategoriaNavigation)
+                @Html.DisplayName("Categoria")
             </th>
             <th></th>
         </tr>
@@ -49,7 +49,7 @@
                 @Html.DisplayFor(modelItem => item.Precio)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.IdCategoria)
+                @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Nombre)
             </td>
             <td>
                         <a asp-action="Edit" asp-route-id="@item.IdComida"><i class="fa fa-edit"></i>

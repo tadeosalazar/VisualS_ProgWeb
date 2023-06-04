@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Prueba_v1.Models.dbModels.Comidum>
 
+
 @{
     ViewData["Title"] = "Inicio";
     Layout = User.IsInRole("Admin") ? "_LayoutAdm" : "_LayoutEsp";
 }
-
 
 <html lang="en">
 <head>
@@ -13,77 +13,30 @@
     <link rel="stylesheet" href="~/css/entradas.css" asp-append-version="true" />
 </head>
 
-
 <body>
-<h1>A DEGUSTAR</h1>
+    <h1>A DEGUSTAR</h1>
+    <p>Escoge de nuestro amplio catálogo de comidas para que no te quedes con hambre</p>
 
-<p>Escoge de nuestro amplio catalogo de comidas para que no te quedes con hambre</p>
-
-<div class="col-lg-12">
-    <div class="card-grid">
-    <div class="card-container">
-            <div class="card">
-                <div class="face front">
-                    <img src="~/IMG/burgir.jpg" alt="">
-                    <h3>Hamburguesa</h3>
-                </div>
-                <div class="face back">
-                    <p>
-                        Una deliciosa hamburguesa simple, con carne de res, queso manchego, 2 tiras de tocino,
-                        tomate, cebolla y lechuga acompañado de una orden de papas francesas.
-                    </p>
-                    <div class="link">
-                        <a href="#">Agregar</a>
+    <div class="col-lg-12">
+        <div class="card-grid">
+            @foreach (var comida in Model)
+            {
+                <div class="card-container">
+                    <div class="card">
+                        <div class="face front">
+                            <img src="@comida.Imagen" alt="">
+                            <h3>@comida.Nombre</h3>
+                        </div>
+                        <div class="face back">
+                            <p>@comida.Descripcion</p>
+                            <div class="link">
+                                <a href="#">Agregar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
+            }
         </div>
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="face front">
-                        <img src="~/IMG/pizza.jpg" alt="">
-                        <h3>Pizza</h3>
-                    </div>
-                    <div class="face back">
-                        <p>
-                            Una deliciosa Pizza de pepperoni para disfrutar, que consta de 8 rebanadas y orilla
-                            sazonada con hierbas finas y queso parmesano.
-                        </p>
-                        <div class="link">
-                            <a href="#">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="face front">
-                        <img src="~/IMG/pescado.jpg" alt="">
-                        <h3>Pescado Empanizado</h3>
-                    </div>
-                    <div class="face back">
-                        <p>
-                            Un filete de pescado empanizado con un conjunto de vegetales y papas a la francesa.
-                        </p>
-                        <div class="link">
-                            <a href="#">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
     </div>
-</div>
 </body>
 </html>
-
-

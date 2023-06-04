@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +13,7 @@ using Prueba_v1.Models.DTO;
 
 namespace Prueba_v1.Controllers
 {
-    
+
     public class ComidumsController : Controller
     {
         private readonly Pia_ProgWebContext _context;
@@ -36,14 +37,15 @@ namespace Prueba_v1.Controllers
         [Authorize(Roles = "Cliente, Admin")]
         public async Task<IActionResult> Inicio()
         {
-            var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
-            return View(await pia_ProgWebContext.ToListAsync());
+            var comidas = await _context.Comida.Where(c => c.IdCategoria == 1).Include(c => c.IdCategoriaNavigation).ToListAsync();
+            return View(comidas);
         }
-
+        
+        [Authorize(Roles = "Cliente, Admin")]
         public async Task<IActionResult> Entradas()
         {
-            var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
-            return View(await pia_ProgWebContext.ToListAsync());
+            var comidas = await _context.Comida.Where(c => c.IdCategoria == 5).Include(c => c.IdCategoriaNavigation).ToListAsync();
+            return View(comidas);
         }
 
         public async Task<IActionResult> Bebidas()
@@ -75,22 +77,37 @@ namespace Prueba_v1.Controllers
         // GET: Comidums/Create
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria");
-            return View();
+            ComidumCreateDTO ccd = new ComidumCreateDTO
+            {
+                Categorias = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria")
+            };
+
+            return View(ccd);
         }
+        
 
         // POST: Comidums/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdComida,Nombre,Descripcion,Precio,IdCategoria")] Comidum comidum)
+        public async Task<IActionResult> Create(ComidumCreateDTO comidum)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(comidum);
+                Comidum comida = new Comidum 
+                { 
+                    IdCategoria= comidum.IdCategoria,
+                    Nombre = comidum.Nombre,
+                    Descripcion = comidum.Descripcion,
+                    Imagen = comidum.Imagen,
+                    Precio = comidum.Precio ,
+                    IdComida = comidum.IdComida 
+                };
+                
+                _context.Add(comida);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Comidums", "Inicio");
             }
             ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria", comidum.IdCategoria);
             return View(comidum);
@@ -182,14 +199,14 @@ namespace Prueba_v1.Controllers
             {
                 _context.Comida.Remove(comidum);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ComidumExists(int id)
         {
-          return (_context.Comida?.Any(e => e.IdComida == id)).GetValueOrDefault();
+            return (_context.Comida?.Any(e => e.IdComida == id)).GetValueOrDefault();
         }
     }
 }

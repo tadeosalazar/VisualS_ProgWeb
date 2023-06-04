@@ -7,30 +7,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Prueba_v1.Models.DTO
 {
-    public class ComidumCreateDTO : Controller
+    public class ComidumCreateDTO
     {
-        [Key]
-        [Column("id_comida")]
         public int IdComida { get; set; }
-        [Column("nombre")]
-        [StringLength(50)]
-        [Unicode(false)]
         public string Nombre { get; set; } = null!;
-        [Column("descripcion")]
-        [StringLength(300)]
-        [Unicode(false)]
         public string Descripcion { get; set; } = null!;
-        [Column("precio", TypeName = "numeric(18, 0)")]
+        public string? Imagen { get; set; }
         public decimal Precio { get; set; }
-        [Column("id_categoria")]
         public int IdCategoria { get; set; }
 
        
-        public SelectList? Categorium { get; set; }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public SelectList? Categorias { get; set; }
     }
 }

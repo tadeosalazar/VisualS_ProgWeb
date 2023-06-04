@@ -1,7 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@{
+    ViewData["Title"] = "Inicio";
+    Layout = User.IsInRole("Admin") ? "_LayoutAdm" : "_LayoutEsp";
+}
 
 <!DOCTYPE html>
 <html lang="en">

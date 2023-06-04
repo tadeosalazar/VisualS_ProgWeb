@@ -1,12 +1,11 @@
 ﻿@model IEnumerable<Prueba_v1.Models.dbModels.Comidum>
 
-@{
-    ViewData["Title"] = "Entradas";
-}
 
 @{
-    Layout = "_LayoutEsp";
+    ViewData["Title"] = "Entradas";
+    Layout = User.IsInRole("Admin") ? "_LayoutAdm" : "_LayoutEsp";
 }
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -14,76 +13,30 @@
     <link rel="stylesheet" href="~/css/entradas.css" asp-append-version="true" />
 </head>
 
-
 <body>
-<h1>Nuestras Entradas</h1>
+    <h1>Entradas</h1>
+    <p>Escoge de nuestro amplio catálogo de entradas para que no te quedes con hambre</p>
 
-<p>¿Hambriento y quieres algo para combatir el hambre hasta el platillo fuerte?, Prueba nuestras entradas.</p>
-
-<div class="col-lg-12">
-    <div class="card-grid">
-    <div class="card-container">
-            <div class="card">
-                <div class="face front">
-                    <img src="~/IMG/ensalada.jpg" alt="">
-                    <h3>Ensalada</h3>
-                </div>
-                <div class="face back">
-                    <p>
-                        Algo ligero antes de empezar, nutritvio y nada muy pesado, con una increible variedad de vegetales.
-                    </p>
-                    <div class="link">
-                        <a href="#">Agregar</a>
+    <div class="col-lg-12">
+        <div class="card-grid">
+            @foreach (var comida in Model)
+            {
+                <div class="card-container">
+                    <div class="card">
+                        <div class="face front">
+                            <img src="@comida.Imagen" alt="">
+                            <h3>@comida.Nombre</h3>
+                        </div>
+                        <div class="face back">
+                            <p>@comida.Descripcion</p>
+                            <div class="link">
+                                <a href="#">Agregar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
+            }
         </div>
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="face front">
-                        <img src="~/IMG/Guacamole.jpg" alt="">
-                        <h3>Pizza</h3>
-                    </div>
-                    <div class="face back">
-                        <p>
-                            Un clasico de la comida mexicana, un delcioso guacamole para acompañar con totopos
-                            en lo que esperas el platillo fuerte.
-                        </p>
-                        <div class="link">
-                            <a href="#">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="face front">
-                        <img src="~/IMG/salsa.jpg" alt="">
-                        <h3>Salsa</h3>
-                    </div>
-                    <div class="face back">
-                        <p>
-                            ¿Antojo de algo picosito para empezar?, prueba nuestra receta secreta de salsa.
-                        </p>
-                        <div class="link">
-                            <a href="#">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
     </div>
-</div>
 </body>
 </html>
-
-
