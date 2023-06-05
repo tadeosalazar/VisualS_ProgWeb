@@ -20,68 +20,28 @@
 
 <p>Deliciosas Bebidas para acompañar con tu comidita :).</p>
 
-<div class="col-lg-12">
-    <div class="card-grid">
-    <div class="card-container">
-            <div class="card">
-                <div class="face front">
-                    <img src="~/IMG/cocacola.jpg" alt="">
-                    <h3>Coca-Cola</h3>
-                </div>
-                <div class="face back">
-                    <p>
-                        Una clasica coca-cola para quitarse esa sed que tanto te lleva molestando.
-                    </p>
-                    <div class="link">
-                        <a href="#">Agregar</a>
+    <
+    <div class="col-lg-12">
+        <div class="card-grid">
+            @foreach (var comida in Model)
+            {
+                <div class="card-container">
+                    <div class="card">
+                        <div class="face front">
+                            <img src="@comida.Imagen" alt="">
+                            <h3>@comida.Nombre</h3>
+                        </div>
+                        <div class="face back">
+                            <p>@comida.Descripcion</p>
+                            <div class="link">
+                                <a href="#">Agregar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
+            }
         </div>
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="face front">
-                        <img src="~/IMG/limonada.jpg" alt="">
-                        <h3>Limonada</h3>
-                    </div>
-                    <div class="face back">
-                        <p>
-                            Una refrescante limonada dulce para este calor.
-                        </p>
-                        <div class="link">
-                            <a href="#">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="face front">
-                        <img src="~/IMG/jamaica.jpg" alt="">
-                        <h3>Jamaica</h3>
-                    </div>
-                    <div class="face back">
-                        <p>
-                            Una bebida de jamaica que te recordara a los viejos tiempos.
-                        </p>
-                        <div class="link">
-                            <a href="#">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
     </div>
-</div>
 </body>
 </html>
 

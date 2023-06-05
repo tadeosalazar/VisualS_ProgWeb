@@ -44,14 +44,14 @@ namespace Prueba_v1.Controllers
         [Authorize(Roles = "Cliente, Admin")]
         public async Task<IActionResult> Entradas()
         {
-            var comidas = await _context.Comida.Where(c => c.IdCategoria == 5).Include(c => c.IdCategoriaNavigation).ToListAsync();
+            var comidas = await _context.Comida.Where(c => c.IdCategoria == 2).Include(c => c.IdCategoriaNavigation).ToListAsync();
             return View(comidas);
         }
 
         public async Task<IActionResult> Bebidas()
         {
-            var pia_ProgWebContext = _context.Comida.Include(c => c.IdCategoriaNavigation);
-            return View(await pia_ProgWebContext.ToListAsync());
+            var comidas = await _context.Comida.Where(c => c.IdCategoria == 3).Include(c => c.IdCategoriaNavigation).ToListAsync();
+            return View(comidas);
         }
         //Prueba
 
