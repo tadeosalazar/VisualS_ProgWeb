@@ -4,32 +4,73 @@
     ViewData["Title"] = "Register";
 }
 
+<style>
+    /* Pantalla de registro prueba */
+    body {
+        background-color: #f8f9fa;
+    }
 
-@ViewData["Title"]
+    .register-container {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin: 50px auto;
+        max-width: 400px;
+    }
 
+        .register-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-floating label {
+        font-size: 14px;
+    }
+
+    .form-floating input.form-control {
+        height: 45px;
+        border-radius: 4px;
+    }
+
+    .text-danger {
+        font-size: 14px;
+    }
+
+    .register-container button[type="submit"] {
+        height: 45px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+</style>
 
 <div class="row">
     <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="register-container">
             <h2>Crear Nueva Cuenta.</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-floating">
+            <div class="form-group">
+                <label asp-for="Input.Email">Email</label>
                 <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.Email"></label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <div class="form-floating">
+            <div class="form-group">
+                <label asp-for="Input.Password">Password</label>
                 <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Password"></label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
-            <div class="form-floating">
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.ConfirmPassword"></label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Registrarse</button>
+            <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Registrarse</button>
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">
@@ -41,8 +82,10 @@
                 {
                     <div>
                         <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
+                                article
+                                about setting up this ASP.NET application to support logging in via external services
+                            </a>.
                         </p>
                     </div>
                 }
@@ -67,3 +110,4 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
